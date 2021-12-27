@@ -1,6 +1,7 @@
 # PUBIP-CLI tool
 
-The pubip cli tool is a very simple program to get the external IPv4 and save it to the clipboard.
+If you use minecrafts "open to lan" feature, this tool automatically determines your
+public IP address as well as the port and lays it into the system clipboard so that you can easily share the address with your friends.
 
 ## How to use PUBIP-CLI?
 
@@ -16,8 +17,22 @@ pubip uses
 
 ## Installing (Linux)
 
-1.  `$ cd /opt`
-2.  `$ git clone https://github.com/okiwi6/pubip-cli.git`
-3.  `$ cd pubip-cli`
-4.  `$ cargo build --release`
-5.  `$ sudo ln -s /opt/pubip-cli/target/release/pubip /usr/local/bin/`
+1.  Choose a location, for example
+
+    `$ cd /opt`
+
+2.  Clone the repo
+
+    `$ git clone https://github.com/okiwi6/pubip-cli.git`
+
+3.  Enter the repo
+
+    `$ cd pubip-cli`
+
+4.  Build the tool using cargo [(if you don't have the rust toolchain installed, do so first)](https://www.rust-lang.org/tools/install)
+
+    `$ cargo build --release`
+
+5.  If you want to, create a symlink so you can use the tool from the command line
+
+    `$ sudo ln -s /opt/pubip-cli/target/release/pubip /usr/local/bin/`
