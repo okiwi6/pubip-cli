@@ -11,8 +11,9 @@ Run `pubip` and your ipv4 will magically appear in your clipboard
 
 pubip uses
 
-- `reqwest`
-- `rust-clipboard`
+- [`reqwest`](https://github.com/seanmonstar/reqwest)
+- [`netstat`](http://netstat.net/)
+- [`rust-clipboard`](https://github.com/aweinstock314/rust-clipboard)
 - external service: [icanhazip.com](https://icanhazip.com)
 
 ## Installing (Linux)
